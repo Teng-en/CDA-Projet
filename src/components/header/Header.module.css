@@ -1,0 +1,65 @@
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url("../../media/header_img-souslocean.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.top{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account
+{
+    height: 40px;
+    width: 40px;
+    background-color: #41EAD4;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 80%;
+    margin-right: 40px;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.middle{
+    align-content: center;
+}
+.header-title {
+    font-size: 150px;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Chonburi", serif;
+}
+.header-title em {
+    color: #41EAD4;
+}
+.header-subtitle {
+    font-size: 23px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: "Lato", serif;
+}
+
+.searchbar{
+    margin-top: 170px;
+    align-content: flex-end;
+    background-color: #41EAD4;
+    height: 30px;
+    width: 110px;
+    border-radius: 15px;
+}
