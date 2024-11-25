@@ -8,15 +8,11 @@ function Footer() {
             <div className={FooterClasses.clickable}>
                 <div>
                     <h3>NOUS CONTACTER</h3>
-                    <ul>
-                        <li>inserer adresse mail</li>
-                    </ul>
+                    <a href={"mailto:tara.culminique@gmail.com"} target={"_blank"}>inserer adresse mail</a>
                 </div>
                 <div>
                     <h3>SE CONNECTER</h3>
-                    <ul>
-                        <li>Créer un compte</li>
-                    </ul>
+                    <a>Créer un compte</a>
                 </div>
             </div>
             <div className={FooterClasses.Copyrights}>
