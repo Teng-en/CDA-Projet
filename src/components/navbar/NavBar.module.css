@@ -17,15 +17,14 @@ gap: 20px;
 }
 
 .navbar-menu a {
-color: #000000;
+color: #ffffff;
 text-decoration: none;
-font-weight: 400;
+font-size: large;
 transition: color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-  color: #41EAD4;
+  color: #59d5f4;
   text-decoration-line: underline;
-  font-weight: bold;
 }
   

@@ -13,7 +13,7 @@ function Header() {
                 </div>
             </div>
             <div className={classes.middle}>
-                <h1 className={classes["header-title"]}>Sous l'Ocean<em>.</em></h1>
+                <span className={classes["header-title"]}>Sous l'Ocean<span>.</span></span>
                 <p className={classes["header-subtitle"]}>Bienvenue Sous L’océan, où vous plongerez dans des articles et
                     des
                     fun facts fascinants sur la vie marine et ses mystères.</p>

@@ -20,9 +20,9 @@
 }
 .account
 {
-    height: 40px;
-    width: 40px;
-    background-color: #41EAD4;
+    height: 45px;
+    width: 45px;
+    background-color: #59d5f4;
     border-radius: 50%;
     display: flex;
     opacity: 80%;
@@ -42,19 +42,20 @@
 
 .middle{
     align-content: center;
+    padding: 135px 40px 0 40px;
 }
 .header-title {
-    font-size: 150px;
+    font-size: clamp(70px, 10vw, 200px);
     color: #FFFFFF;
     font-weight: 700;
     letter-spacing: 1px;
     font-family: "Chonburi", serif;
 }
-.header-title em {
-    color: #41EAD4;
+.header-title span {
+    color: #59d5f4;
 }
 .header-subtitle {
-    font-size: 23px;
+    font-size: clamp(17px, 2.5vw, 26px);
     color: #FFFFFF;
     font-weight: 400;
     font-family: "Lato", serif;
@@ -62,14 +63,14 @@
 
 .searchbar{
     margin-left: auto;
-    margin-top: 170px;
-    background-color: #41EAD4;
-    height: 30px;
-    width: 150px;
+    background-color: #59d5f4;
+    height: 35px;
+    width: clamp(19.1vw, 320px, 320px);
     border-radius: 15px;
     margin-right: 40px;
-    display: flex;
     padding: 3px;
+    display: flex;
+    margin-top: 215px;
 }
 
 .searchbar input{

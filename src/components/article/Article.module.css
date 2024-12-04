@@ -1,0 +1,45 @@
+.article{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1vw;
+}
+
+.article h1{
+    font-size: clamp(43px, 6vw, 123px);
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-family: "Chonburi", serif;
+    margin-left: 3vw;
+}
+
+.articleContent{
+    font-size: clamp(21px, 0.3vw, 30px);
+    color: #FFFFFF;
+    font-family: "Lato", serif;
+    text-align: justify;
+    padding: 0 3vw 0 3vw;
+}
+
+.articleTags{
+    color: #ffffff;
+    display: flex;
+    margin-left: 3vw;
+    margin-bottom: 1.5vw;
+    text-decoration: underline #59d5f4;
+}
+
+.head img{
+    border-radius: 25px;
+    margin-right: 3vw;
+    min-width: 25vw;
+    max-width: 42vw;
+}

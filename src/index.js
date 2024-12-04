@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AppLayout from './AppLayout';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {News} from "./news/News";
+import ArticlePage from "./articlePage/ArticlePage"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
       <BrowserRouter>
           <Routes>
               <Route path="/" element={<AppLayout />}>
-                  <Route path="news" element={<News/>}/>
+                  <Route index element={<Navigate to={"news"}/>} />
+                  <Route path="news" element={<News />}/>
+                  <Route path="ArticlePage/:id" element={<ArticlePage />}/>
               </Route>
           </Routes>
       </BrowserRouter>
