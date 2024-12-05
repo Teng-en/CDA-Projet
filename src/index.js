@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {News} from "./news/News";
 import ArticlePage from "./articlePage/ArticlePage"
+import Connexion from "./connexion/Connexion"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
                   <Route index element={<Navigate to={"news"}/>} />
                   <Route path="news" element={<News />}/>
                   <Route path="ArticlePage/:id" element={<ArticlePage />}/>
+                  <Route path="Connexion" element={<Connexion />}/>
               </Route>
           </Routes>
       </BrowserRouter>

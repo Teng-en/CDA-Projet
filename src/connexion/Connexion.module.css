@@ -1,0 +1,15 @@
+.forms{
+    color: white;
+    display: grid;
+    grid-template-areas: "a a";
+}
+
+.connexion{
+    justify-content: center;
+    display: grid;
+}
+
+.inscription{
+    display: grid;
+    justify-content: center;
+}
