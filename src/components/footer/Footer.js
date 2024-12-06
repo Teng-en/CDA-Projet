@@ -1,5 +1,6 @@
 import FooterClasses from './Footer.module.css'
 import logo from '../../media/SO_logo-removebg-preview.png'
+import { Link } from "react-router";
 
 function Footer() {
 
@@ -11,8 +12,8 @@ function Footer() {
                     <a href={"mailto:tara.culminique@gmail.com"} target={"_blank"}>inserer adresse mail</a>
                 </div>
                 <div>
-                    <h3>SE CONNECTER</h3>
-                    <a>Créer un compte</a>
+                    <h3><Link to={"connexion"}>SE CONNECTER</Link></h3>
+                    <a><Link to={"connexion"}>Créer un compte</Link></a>
                 </div>
             </div>
             <div className={FooterClasses.Copyrights}>

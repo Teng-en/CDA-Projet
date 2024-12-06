@@ -3,35 +3,44 @@ import {useState} from 'react';
 
 function Connexion() {
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [usernameConnexion, setUsernameConnexion] = useState("");
+    const [passwordConnexion, setPasswordConnexion] = useState("");
     const [email, setEmail] = useState("")
+    const [usernameInscription, setUsernameInscription] = useState("");
+    const [passwordInscription, setPasswordInscription] = useState("");
 
-    const usernameChangeHandler = (e) => {
-        setUsername(e.target.value);
+    const usernameConnexionChangeHandler = (e) => {
+        setUsernameConnexion(e.target.value);
     }
-    const passwordChangeHandler = (e) => {
-        setPassword(e.target.value)
+    const passwordConnexionChangeHandler = (e) => {
+        setPasswordConnexion(e.target.value)
     }
 
     const emailChangeHandler = (e) => {
         setEmail(e.target.value)
     }
 
+    const usernameInscriptionChangeHandler = (e) => {
+        setUsernameInscription(e.target.value);
+    }
+    const passwordInscriptionChangeHandler = (e) => {
+        setPasswordInscription(e.target.value)
+    }
+
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log("Nom d'utilisateur soumis :", username);
+        console.log("Nom d'utilisateur soumis :", usernameInscription);
     };
 
     return (
         <div className={connexionClasses.forms}>
             <form onSubmit={submitHandler}>
                 <div className={connexionClasses.connexion}>
-                    <h2>Connexion</h2>
+                    <h1>Connexion</h1>
                     <label>Nom d'utilisateur :</label>
-                    <input type="text" value={username} onChange={usernameChangeHandler}/>
+                    <input type="text" value={usernameConnexion} onChange={usernameConnexionChangeHandler}/>
                     <label>Mot de passe</label>
-                    <input type="password" value={password} onChange={passwordChangeHandler}/>
+                    <input type="password" value={passwordConnexion} onChange={passwordConnexionChangeHandler}/>
                     <div>
                         <button type='Submit'>Envoyer</button>
                     </div>
@@ -40,13 +49,13 @@ function Connexion() {
 
             <form onSubmit={submitHandler}>
                 <div className={connexionClasses.inscription}>
-                    <h2>Inscription</h2>
+                    <h1>Inscription</h1>
                     <label>Nom d'utilisateur :</label>
-                    <input type="text" value={username} onChange={usernameChangeHandler}/>
+                    <input type="text" value={usernameInscription} onChange={usernameInscriptionChangeHandler}/>
                     <label>Email :</label>
                     <input type="mail" value={email} onChange={emailChangeHandler}/>
                     <label>Mot de passe</label>
-                    <input type="password" value={password} onChange={passwordChangeHandler}/>
+                    <input type="password" value={passwordInscription} onChange={passwordInscriptionChangeHandler}/>
                     <div>
                         <button type='Submit'>Envoyer</button>
                     </div>

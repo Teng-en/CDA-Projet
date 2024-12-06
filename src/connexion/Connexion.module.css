@@ -2,14 +2,21 @@
     color: white;
     display: grid;
     grid-template-areas: "a a";
+    margin: 7vw 0 10vw 0;
 }
 
 .connexion{
-    justify-content: center;
+    justify-content: flex-end;
     display: grid;
+    margin-right: 11vw;
 }
 
 .inscription{
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 11vw;
+}
+
+h1{
+    margin-bottom: 2vw;
 }

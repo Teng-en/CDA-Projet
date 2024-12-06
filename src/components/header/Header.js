@@ -2,13 +2,20 @@ import classes from './Header.module.css'
 import logo from '../../media/SO_logo-removebg-preview.png'
 import account from '../../media/account_icon.png'
 import pointer from '../../media/pointer.png'
+import {useNavigate} from "react-router-dom";
 
 function Header() {
+
+    const navigate = useNavigate()
+    function navConnexion (){
+        navigate("connexion")
+    }
+
     return (
         <header className={classes.header}>
             <div className={classes.top}>
                 <img className={classes.logo} src={logo} alt="logo SO."/>
-                <div className={classes.account}>
+                <div onClick={navConnexion} className={classes.account}>
                     <img src={account} alt={"icone compte"}/>
                 </div>
             </div>

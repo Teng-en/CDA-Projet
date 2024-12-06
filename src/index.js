@@ -10,18 +10,20 @@ import Connexion from "./connexion/Connexion"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-      <BrowserRouter>
-          <Routes>
-              <Route path="/" element={<AppLayout />}>
-                  <Route index element={<Navigate to={"news"}/>} />
-                  <Route path="news" element={<News />}/>
-                  <Route path="ArticlePage/:id" element={<ArticlePage />}/>
-                  <Route path="Connexion" element={<Connexion />}/>
-              </Route>
-          </Routes>
-      </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<AppLayout/>}>
+                    <Route index element={<Navigate to={"news"}/>}/>
+                    <Route path="news">
+                        <Route index element={<News/>}/>
+                        <Route path=":id" element={<ArticlePage/>}/>
+                    </Route>
+                    <Route path="connexion" element={<Connexion/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
