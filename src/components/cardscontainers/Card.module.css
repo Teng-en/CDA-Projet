@@ -45,3 +45,19 @@
 .card-button:hover {
     background-color: #3fbfaf;
 }
+
+.card-fav{
+    height: 45px;
+    width: 45px;
+    background-color: #59d5f4;
+    border-radius: 50%;
+    display: flex;
+    opacity: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.card-fav img{
+    max-width: 30px;
+}
