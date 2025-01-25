@@ -1,4 +1,46 @@
-# Getting Started with Create React AppLayout
+# Guide de déploiement
+
+## 1. Introduction
+* L'application "Sous l'Ocean" est 
+* Expliquer les objectifs du guide
+* Lister les prérequis pour suivre ce guide (matériel, logiciels, configuration minimale du serveur)
+## 2. Préparation du serveur
+* Étapes pour installer les outils nécessaires : 
+    - **Node.js** (et npm/yarn)
+    - **MongoDB**
+    - Serveur web (exemple : **NGINX** ou **Apache**)
+* Configuration réseau (ouverture des ports nécessaires)
+* Paramètres de sécurité de base:
+    - Mise à jour du système
+    - Configuration du pare-feu (exemple : UFW ou iptables)
+## 3. Configuration de la base de données MongoDB
+* Installation et initialisation de MongoDB
+* Création de l'utilisateur et de la base de données
+* Configuration des permissions pour l'application
+## 4. Déploiement de l'application React
+* Compilation de l'application pour la production (build)
+* Transfet des fichiers vers le serveur (exemple : SCP, rsync)
+* Configuration d'un serveur web (NGINX ou Apache) pour servir les fichiers statiques
+## 5. Backend et API
+* Explication de la connexion entre l'application React et MongoDB
+* Configuration du reverse proxy (exemple : NGINX)
+* Mise en place et test de l'API (exemple : Express.js) *SI CONCERNÉ*
+## 6. Mise en Production
+* Déploiement d'un gestionnaire de processus (exemple  : **PM2** pour Node.js)
+* Configuration du reverse proxy (exemple : NGINX)
+* Certificat SSL (via **Let's Encrypt**) pour securiser l'application (*Facultatif*)
+* Test de l'accès public à l'application
+## 7. Sécurisation de l'environnement
+* Protection des données sensibles (gestion des fichiers .env)
+* Bonnes pratiques de sécurité pour MongoDB (authentification, restrictions d'accès)
+* Configuration HTTPS
+## 8. Résolution des problèmes
+* Liste des problèmes courants lors du déploiement (erreurs de connexion, dépendances manquantes, etc)
+* Solutions et ressources
+## 9. Conclusion
+* Synthèse des étapes réalisées
+* Conseils pour le maintien en condition opérationnelle de l'application
+
 
 This project was bootstrapped with [Create React AppLayout](https://github.com/facebook/create-react-app).
 

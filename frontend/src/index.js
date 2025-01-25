@@ -5,13 +5,17 @@ import AppLayout from './AppLayout';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {News} from "./news/News";
-import ArticlePage from "./articlePage/ArticlePage"
-import Connexion from "./connexion/Connexion"
+import ArticlePage from "./articlePage/ArticlePage";
+import Connexion from "./connexion/Connexion";
+import MyAccount from "./myAccount/MyAccount";
+import CreateArticle from "./createArticle/CreateArticle";
+import {AuthProvider} from "./contexts/AuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
+            <AuthProvider>
             <Routes>
                 <Route path="/" element={<AppLayout/>}>
                     <Route index element={<Navigate to={"news"}/>}/>
@@ -20,8 +24,11 @@ root.render(
                         <Route path=":id" element={<ArticlePage/>}/>
                     </Route>
                     <Route path="connexion" element={<Connexion/>}/>
+                    <Route path="me" element={<MyAccount/>}/>
+                    <Route path="createarticle" element={<CreateArticle/>}/>
                 </Route>
             </Routes>
+            </AuthProvider>
         </BrowserRouter>
     </React.StrictMode>
 );

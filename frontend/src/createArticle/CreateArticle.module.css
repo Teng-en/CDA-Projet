@@ -13,7 +13,7 @@
     margin-bottom: 1vw;
 }
 
-.article h1{
+.title{
     font-size: clamp(43px, 6vw, 123px);
     color: #FFFFFF;
     letter-spacing: 1px;
@@ -37,9 +37,15 @@
     text-decoration: underline #59d5f4;
 }
 
-.head img{
+.imagePreview img {
     border-radius: 25px;
     margin-right: 3vw;
-    min-width: 25vw;
-    max-width: 42vw;
+    min-width: 21vw;
+    max-width: 15vw;
+}
+.charCount {
+    right: 10px;
+    bottom: 10px;
+    font-size: 16px;
+    color: #59d5f4;
 }

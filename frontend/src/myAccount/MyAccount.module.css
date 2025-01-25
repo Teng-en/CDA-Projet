@@ -1,0 +1,16 @@
+.myAccount{
+    text-align: center;
+    color: white;
+}
+
+.userInfo input{
+    width: max-content;
+}
+
+.iconStyleButton {
+    color: #59d5f4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0 0 0 10px;
+}

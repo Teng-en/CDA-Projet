@@ -13,7 +13,7 @@ function Footer() {
                 </div>
                 <div>
                     <h3><Link to={"connexion"}>SE CONNECTER</Link></h3>
-                    <a><Link to={"connexion"}>Créer un compte</Link></a>
+                    <Link to={"connexion"}>Créer un compte</Link>
                 </div>
             </div>
             <div className={FooterClasses.Copyrights}>
